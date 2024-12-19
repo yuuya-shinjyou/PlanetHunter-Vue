@@ -1,0 +1,41 @@
+:root {
+  --main-color: #00fff5;
+  --scroll-linelength: 10px;
+}
+
+/* 共通 */
+body {
+  color: white;
+  font-family: 'Exo', 'Noto Sans JP', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo',
+    'sans-serif';
+  font-feature-settings: 'palt';
+}
+#app {
+  position: relative;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+/* 背景 */
+.bgParallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.bgParallax-video {
+  width: 100%;
+  object-fit: cover;
+}
+.bgParallax::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 50%);
+  background-size: 4px 4px;
+}
